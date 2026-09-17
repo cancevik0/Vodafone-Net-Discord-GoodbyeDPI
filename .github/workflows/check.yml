@@ -1,0 +1,15 @@
+name: Windows checks
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Test with Windows PowerShell 5.1
+        shell: powershell
+        run: .\tests\Validate.Tests.ps1
+      - name: Test with PowerShell 7
+        shell: pwsh
+        run: .\tests\Validate.Tests.ps1
