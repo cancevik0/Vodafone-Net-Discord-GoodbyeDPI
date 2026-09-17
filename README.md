@@ -20,6 +20,17 @@ Bu proje **yalnızca eğitim ve araştırma amaçlı** yayımlanmıştır: ağ d
 
 Mac kullanıyorsanız doğrudan [macOS kurulum rehberine](docs/macos.md) geçin. Aşağıdaki komutlar Windows içindir.
 
+## Discord updater bypass / güncelleme ekranında takılma
+
+Discord'un ana bağlantısı ile açılıştaki güncelleme kontrolü ayrı sorunlardır. DPI kurulumu tek başına güncelleme ekranını atlamaz.
+
+| Platform | Yöntem ve anlatım |
+| --- | --- |
+| Windows | Yerel önbellekteki geçerli manifesti `pinned_update.json` olarak kaydedip `USE_PINNED_UPDATE_MANIFEST` ayarıyla sabitleme. [Adım adım uygulama ve geri alma](docs/DISCORD-UPDATE.md). Kaynak Discord 1.0.9257 kurulumunda denenmiştir. |
+| macOS | Bu repodaki launcher yalnızca Discord'u yerel proxy ile açar; updater bypass uygulamaz. [Mac güncelleyicisi ve mevcut yöntemin sınırı](docs/macos.md#discord-updater-bypass-durumu). Paylaşılan Mac kurulum rehberinde ayrı bir bypass işlemi belgelenmemiştir. |
+
+Windows'taki sabitleme yeni güvenlik güncellemelerini de durdurabilir; normal güncelleme erişimi sağlanınca geri alınmalıdır. Windows manifestini veya ayarını doğrulamadan Mac'e taşımayın.
+
 ## Windows hızlı başlangıç
 
 PowerShell 5.1 veya üzeri gerekir. Repoyu indirip sabit bir klasöre çıkarın. Komutları repo klasöründe çalıştırın.
