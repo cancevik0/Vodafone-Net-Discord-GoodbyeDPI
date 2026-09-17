@@ -1,0 +1,24 @@
+[app]
+mode = "http"
+listen-addr = "127.0.0.1:18080"
+no-tui = true
+log-level = "error"
+auto-configure-network = false
+
+[dns]
+mode = "udp"
+addr = "9.9.9.9:53"
+qtype = "ipv4"
+
+# Liste dışındaki HTTPS trafiğine DPI işlemi uygulama.
+[https]
+skip = true
+split-mode = "chunk"
+chunk-size = 1
+
+# Yalnızca sites.txt içindeki alan adlarına DPI işlemi uygula.
+[[rules]]
+name = "Secili siteler"
+priority = 100
+match = { domains = ["file:sites.txt"] }
+https = { skip = false, split-mode = "chunk", chunk-size = 1 }
