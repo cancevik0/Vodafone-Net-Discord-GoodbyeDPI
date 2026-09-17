@@ -74,6 +74,16 @@ Tekrar kurulumda mevcut liste korunur; TOML repo örneğinden yeniden oluşturul
 
 Eski rehberin `auto-configure-network=true` seçeneği kullanılmışsa macOS ağ ayarlarının Proxy bölümünü ayrıca kontrol edin; bu betik eski sistem proxy ayarını geri almaz. Proxy içindeki Quad9 DNS seçimi macOS bağdaştırıcısının DNS'ini değiştirmez.
 
+## Discord updater bypass durumu
+
+**Bu Mac kurulumunda güncellemeyi atlayan veya sürümü sabitleyen bir işlem yoktur.** `discord-launch.sh`, proxy hazır olunca Discord'u `--proxy-server=http://127.0.0.1:18080` ile açar. Bu parametreyi updater bypass olarak değerlendirmeyin; güncelleyicinin tüm bağlantılarının bu proxyyi kullanacağı doğrulanmadı.
+
+Paylaşılan kaynak Mac rehberinde `pinned_update.json`, güncelleme atlama ayarı veya ayrı bir updater işlemi bulunmuyor. Dolayısıyla Windows'ta gözlenen `USE_PINNED_UPDATE_MANIFEST` yöntemini Mac için çalışır bir çözüm olarak sunmuyoruz. Mac'te ayrıca uygulanmış bir yöntem varsa, sürümü ve geri alma adımları doğrulandıktan sonra bu bölüme eklenmelidir.
+
+`Checking for updates` / `Update failed` ekranında kalıyorsa önce proxy ve launcher durumunu yukarıdaki komutlarla kontrol edin. Ana uygulamanın açılması, güncelleme sunucusuna erişimin de çalıştığını kanıtlamaz. Çalışan bir bağlantıda normal güncelleme tamamlandıktan sonra yerel proxy ile yeniden denenebilir; bu, kalıcı bir updater bypass değildir.
+
+Windows için belgelenmiş deneyin ayrıntıları: [Discord updater bypass ve geri alma](DISCORD-UPDATE.md).
+
 ## Doğrulama sınırı
 
 Gerçek launchd yükleme, Gatekeeper, oturum açılışı ve Discord bağlantısı bir Mac üzerinde ayrıca test edilmelidir. Windows güncelleme manifesti sabitlemesi macOS için uygulanmış veya doğrulanmış değildir. Projenin eğitim/araştırma amacı ve kullanım açıklaması bu bölüm için de geçerlidir.
