@@ -1,0 +1,13 @@
+name: macOS static checks
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  syntax:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check shell syntax and plist templates
+        run: |
+          for script in macos/*.sh; do /bin/bash -n "$script"; done
+          for plist in macos/launchagents/*.template; do plutil -lint "$plist"; done
