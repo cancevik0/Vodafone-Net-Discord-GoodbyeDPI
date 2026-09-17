@@ -1,0 +1,10 @@
+# Bir satira bir alan adi veya https:// site adresi yazin.
+# Alt alan adlari da kapsanir. URL yolu site bazinda ayrim yapmaz.
+discord.com
+discord.gg
+discordapp.com
+discordapp.net
+discord.media
+discordcdn.com
+discord.dev
+discordstatus.com

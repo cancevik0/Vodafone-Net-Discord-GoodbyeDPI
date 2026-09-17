@@ -1,0 +1,15 @@
+windows/.runtime/
+*.zip
+*.exe
+*.dll
+*.sys
+*.log
+*.sqlite*
+*.db
+settings.json
+pinned_update.json
+.DS_Store
+Thumbs.db
+/macos/sites.txt
+spoofdpi
+*.tar.gz
