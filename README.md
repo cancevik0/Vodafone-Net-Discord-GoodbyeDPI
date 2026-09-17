@@ -1,4 +1,4 @@
-# Açık Hat
+# Vodafone Net Discord — GoodbyeDPI
 
 **Windows için GoodbyeDPI, macOS için Discord'a özel SpoofDPI kurulumu. Vodafone Net üzerinde çalışan yapılandırmalardan doğan topluluk projesi.**
 
@@ -125,6 +125,6 @@ macos/README.md          macOS çalışmasının durumu
 
 Sorun bildirirken Windows sürümü, ISS, kullanılan profil ve hangi adımın başarısız olduğunu yazın. Token, özel mesaj, Wi-Fi parolası, tam Discord ayarları veya kişisel loglar paylaşmayın. [Katkı rehberi](CONTRIBUTING.md).
 
-Asıl DPI motoru [ValdikSS/GoodbyeDPI](https://github.com/ValdikSS/GoodbyeDPI), paket yakalama bileşeni [WinDivert](https://reqrypt.org/windivert.html) projesidir. Açık Hat bu projelerin resmî ürünü değildir; Vodafone veya Discord ile bağlantılı değildir. Bu repo kurulum betikleri ve belgelerini içerir; üçüncü taraf ikilileri Git'e eklemez.
+Asıl DPI motoru [ValdikSS/GoodbyeDPI](https://github.com/ValdikSS/GoodbyeDPI), paket yakalama bileşeni [WinDivert](https://reqrypt.org/windivert.html) projesidir. Bu proje bu projelerin resmî ürünü değildir; Vodafone veya Discord ile bağlantılı değildir. Bu repo kurulum betikleri ve belgelerini içerir; üçüncü taraf ikilileri Git'e eklemez.
 
 Repo kodu [MIT lisansı](LICENSE) kapsamındadır. İndirilen üçüncü taraf bileşenler kendi lisanslarına tabidir; kurulum bunların lisans dosyalarını da saklar. [Bağımlılık bilgileri](THIRD_PARTY.md).
